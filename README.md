@@ -8,7 +8,7 @@ This project demonstrates the use of a Variational AutoEncoder (VAE) to learn a 
 
 ##  The Data
 
-The dataset consists of black-and-white images of circles generated using OpenCV's cv2.circle function. Each image contains a single circle, randomly positioned and sized within the frame. The parameters for the circles are:
+The dataset consists of black-and-white images of circles generated using opencv's `cv2.circle `function. Each image contains a single circle, randomly positioned and sized within the frame. The parameters for the circles are:
 
 - `Radius`: Randomly selected within a defined range.
 - `X-coordinate`: Random horizontal position of the circle's center.
