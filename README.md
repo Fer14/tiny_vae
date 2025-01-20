@@ -1,2 +1,67 @@
-# vae_toy
-Variational AutoEncoder Toy Model
+# Variational AutoEncoder Toy Model
+
+![logo](./logos/logo_blue.png)
+
+# Variational AutoEncoder
+
+This project demonstrates the use of a Variational AutoEncoder (VAE) to learn a latent space representation of simple synthetic data: black-and-white images of circles with varying radius, x, and y coordinates. The goal is to map these parameters to a 3-dimensional latent space, where each dimension ideally corresponds to one of the circle's properties.
+
+##  The Data
+
+The dataset consists of black-and-white images of circles generated using OpenCV's cv2.circle function. Each image contains a single circle, randomly positioned and sized within the frame. The parameters for the circles are:
+
+- `Radius`: Randomly selected within a defined range.
+- `X-coordinate`: Random horizontal position of the circle's center.
+- `Y-coordinate`: Random vertical position of the circle's center.
+
+Below is a sample visualization of the generated data:
+![logo](./plots/data.png)
+
+# The Encoder
+
+![logo](./logos/encoder_blue.png)
+
+
+The encoder network compresses the input image into a 3-dimensional latent representation. It consists of convolutional layers followed by fully connected layers, producing two outputs:
+
+- Mean vector (μ) of the latent distribution.
+- Log variance vector (logσ2) of the latent distribution.
+
+# The Decoder
+
+![logo](./logos/decoder_blue.png)
+
+The decoder reconstructs the original image from the 3-dimensional latent representation. It consists of fully connected layers followed by transposed convolutional layers, ensuring the output matches the original image dimensions.
+
+# The Latent Space
+
+![logo](./logos/latent_space_blue.png)
+
+## First dimension
+
+![logo](./plots/plot2.png)
+
+
+## Second dimension
+
+![logo](./plots/plot3.png)
+
+## Third dimension
+
+![logo](./plots/plot1.png)
+
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+![logo](./logos/logo_white.png)
+
+Made with ❤️ by [Fer14]
