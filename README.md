@@ -35,6 +35,8 @@ The decoder reconstructs the original image from the 3-dimensional latent repres
 
 # The Latent Space
 
+The latent space is a 3-dimensional representation of the circle data. Ideally, each dimension captures a specific property:
+
 ![logo](./logos/latent_space_blue.png)
 
 ## First dimension
