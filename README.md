@@ -8,7 +8,7 @@ This project demonstrates the use of a Variational AutoEncoder (VAE) to learn a 
 
 ##  The Data
 
-The dataset consists of black-and-white images of circles generated using opencv's `cv2.circle `function. Each image contains a single circle, randomly positioned and sized within the frame. The parameters for the circles are:
+The dataset consists of black-and-white images of circles, each of shape 32x32, generated using opencv's `cv2.circle `function. Each image contains a single circle, randomly positioned and sized within the frame. The parameters for the circles are:
 
 - `Radius`: Randomly selected within a defined range.
 - `X-coordinate`: Random horizontal position of the circle's center.
@@ -22,7 +22,7 @@ Below is a sample visualization of the generated data:
 ![logo](./logos/encoder_blue.png)
 
 
-The encoder network compresses the input image into a 3-dimensional latent representation. It consists of convolutional layers followed by fully connected layers, producing two outputs:
+The encoder network compresses the flattened 32x32 input image into a 3-dimensional latent representation. It consists entirely of fully connected layers, producing two outputs:
 
 - Mean vector (μ) of the latent distribution.
 - Log variance vector (logσ2) of the latent distribution.
@@ -31,7 +31,7 @@ The encoder network compresses the input image into a 3-dimensional latent repre
 
 ![logo](./logos/decoder_blue.png)
 
-The decoder reconstructs the original image from the 3-dimensional latent representation. It consists of fully connected layers followed by transposed convolutional layers, ensuring the output matches the original image dimensions.
+The decoder reconstructs the original image from the 3-dimensional latent representation. It also consists entirely of fully connected layers, ensuring the output matches the flattened dimensions of the original image (32x32).
 
 # The Latent Space
 

@@ -111,7 +111,7 @@ def main():
         fixed_dims=[0, 2],
         fixed_values=[0, 0],
         varying_dim=1,
-        grid_size=5,
+        grid_size=7,
         latent_range=(-3, 3),
         title="plots/plot3.png",
     )
