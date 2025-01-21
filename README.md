@@ -41,14 +41,20 @@ The latent space is a 3-dimensional representation of the circle data. Ideally, 
 
 ## First dimension
 
+The radius?
+
 ![logo](./plots/plot2.png)
 
 
 ## Second dimension
 
+The Y-axis?
+
 ![logo](./plots/plot3.png)
 
 ## Third dimension
+
+The X-axis?
 
 ![logo](./plots/plot1.png)
 
