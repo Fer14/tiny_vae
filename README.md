@@ -1,4 +1,4 @@
-# Variational AutoEncoder Toy Model
+# Variational AutoEncoder Tiny Model
 
 ![logo](./logos/logo_blue.png)
 
