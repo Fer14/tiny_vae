@@ -59,6 +59,9 @@ The X-axis?
 ![logo](./plots/plot1.png)
 
 
+## Future Work
+- [ ]  Add Beta-VAE
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
